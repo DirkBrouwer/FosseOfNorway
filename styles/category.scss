@@ -1,0 +1,185 @@
+@import 'fonts';
+@import 'header';
+@import 'footer';
+
+// MAIN
+
+$font-stack: ('bodoniflf', 'Arial', 'sans-serif');
+body {
+	font-family: $font-stack;
+}
+
+img {
+	image-rendering: -webkit-optimize-contrast;
+}
+
+.container {
+	@media screen and (max-width: 768px) {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+#categoryHeader {
+	position: relative;
+	background-image: url('../images/noorse-vesten-category-header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 225px;
+	width: auto
+}
+
+#categoryHeaderText {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	color: #ffffff;
+}
+
+#sideNavBtn {
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#sideNavMobile {
+	z-index: 9999;
+}
+
+#sideNav {
+	li {
+		margin-bottom: 5px;
+	}
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+	height: 100%;
+	/* 100% Full-height */
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	/* Black*/
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 60px;
+	/* Place content 60px from the top */
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000000;
+	display: block;
+	-webkit-transition: 0.3s;
+	transition: 0.3s
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #1575d4;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+	-webkit-transition: margin-left .5s;
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+	.sidenav,
+	.sidenav a {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+.productsPanel {
+	background-color: #EEEEEE;
+	span {
+		font-size: 1.5em
+	}
+}
+
+.changeViewBtn {
+	cursor: pointer;
+}
+
+.productsView {
+	img {
+		position: relative;
+		height: 150px;
+		width: auto;
+		@media screen and (max-width: 320px) {
+			height: 100px;
+		}
+		@media screen and (min-width: 1024px) and (max-width: 1200px) {
+			height: 200px;
+		}
+		@media screen and (min-width: 1200px) {
+			height: 250px;
+		}
+	}
+}
+
+.productImgGrid {
+	display: block;
+	margin: auto;
+}
+
+.productDesc{
+	h3{
+		font-size: 1rem;
+	}
+	h4{
+		font-size: 1rem;
+	}
+}
+
+.productImgList {
+	display: block;
+	margin: auto;
+}

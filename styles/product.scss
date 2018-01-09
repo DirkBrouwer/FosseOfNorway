@@ -1,0 +1,93 @@
+@import 'fonts';
+@import 'header';
+@import 'footer';
+// MAIN
+$font-stack: ('bodoniflf', 'Arial', 'sans-serif');
+body {
+	font-family: $font-stack;
+}
+
+img {
+	image-rendering: -webkit-optimize-contrast;
+}
+
+#discountedPrice {
+	color: #B8191B;
+}
+
+#sizeBtns {
+	button {
+		font-size: 12px;
+	}
+}
+
+.selected {
+	background-color: #C3151C;
+	color: #ffffff;
+}
+
+.imgSelected {
+	border: 1px solid red;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+#addToShoppingcart {
+	button {
+		background-color: #C3151C;
+		width: 100%;
+		h5 {
+			font-size: 1.5em;
+		}
+	}
+}
+
+#productPreviewImages {
+	width: 100%;
+	img {
+		height: 100%;
+		width: 25%;
+	}
+}
+
+#quantitySelector {
+	button {
+		cursor: pointer;
+	}
+	input {
+		width: 3em;
+	}
+}
+
+.contactIcon {
+	width: 1.5em;
+}
+
+#unratedStars {
+	background-image: url('../images/star.svg');
+	height: 32px;
+	width: 5 * 32px;
+	background-size: auto 200%;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
+#ratedStars {
+	background-image: url('../images/star.svg');
+	height: 32px;
+	width: 90%;
+	background-size: auto 200%;
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+#avgRating {
+	color: $headerColor;
+}

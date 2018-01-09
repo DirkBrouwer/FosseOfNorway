@@ -1,0 +1,67 @@
+// HEADER
+
+$headerColor: #023A6D;
+.headerColor {
+    color: $headerColor;
+}
+
+#header {
+    #headerTop {
+        background-color: #a3b0b6;
+    }
+    #headerMain {
+        background-color: #8B98A0;
+        text-align: center;
+    }
+}
+
+#headerTopMenu {
+    text-align: center;
+    li {
+        // color: #ffffff;
+        cursor: pointer;
+        &:hover {
+            color: #000000;
+        }
+    }
+}
+
+#shoppingCart {
+    img {
+        width: 2.5em;
+        height: auto;
+    }
+    span {
+        color: #ffffff;
+    }
+}
+
+nav {
+    background-color: #013773;
+    padding: 0 0 !important;
+    .nav-item {
+        &:hover {
+            background-color: #0452a7
+        }
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.input-group-addon {
+    border: none !important;
+    border-radius: 0;
+}
+
+.oi {
+    top: 0 !important;
+}
+
+#search {
+    span {
+        color: #ffffff;
+        background-color: #C2171F;
+    }
+}
